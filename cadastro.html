@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+
 <body>
     <h1>Crie sua conta</h1>
-    <a href="index.html">volte para o site</a>
     <br>
     <form action="nome">
         <label for="nome">seu nome</label>
-        <br> 
+        <br>
         <input 
-        type="text" 
-        name="nome" 
-        id="nome" 
-        placeholder="digite seu nome" 
-        required>
-        
+            type="text" 
+            name="nome" 
+            id="nome" 
+            placeholder="digite seu nome" 
+            required
+            >
+
     </form>
-    <br><br>
+    <br>
     <form action="email">
         <label for="email">email</label>
         <br>
         <input 
-        type="email" 
-        name="email" 
-        id="email" 
-        placeholder="digite seu email" 
-        required>
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="digite seu email" 
+            required
+        >
     </form>
-    <br><br>
+    <br>
     <form action="senha">
         <label for="senha">sua senha</label>
         <br>
-        <input type="senha" name="senha" id="senha" placeholder="digite sua senha"
-        required>
+        <input 
+            type="password" 
+            name="senha" 
+            id="senha" 
+            placeholder="digite sua senha" 
+            required
+            >
     </form>
+    <br><br>
+    <label for="estudante">Estudante</label>
+    <input 
+        type="radio" 
+        name="profissao" 
+        id="profissao" 
+        required
+        >
+    <label for="professor">Professor</label>
+    <input 
+        type="radio" 
+        name="profissao" 
+        id="profissao" 
+        required
+        >
+    <br><br>
+    <div>
+        <label for="trilha">Trilha de Interesses:</label>
+            <select name="trilha" id="trilha">
+                 <option value="">selecione uma trilha</option>
+            <option value="robotica">Robótica Basica</option>
+         <option value="ia">Inteligencia Artificial</option>
+         <option value="programacao">Programação</option>
+            </select>
+    </div>
+
+    <button type="submit">Cadastre-se</button>
+    </form>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">volte ao site</a>
+            </li>
+        </ul>
+    </nav>
 </body>
+
 </html>
