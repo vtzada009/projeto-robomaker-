@@ -4,111 +4,248 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RoboMaker Kits Educacionais</title>
+    <!--CSS interno-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f8f9fa;
+          color: #333333;
+          line-height: 1.6;
+      }
+
+        h1,h2,h3{
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cabesalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+            line-height: 1.6;
+        }
+
+        .listaNavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .LinkNav {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .LinkNav:hover {
+            color: #d32f2f;
+        }
+
+        .botaoPrincipal {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .botaoPrincipal:hover {
+            background-color: #b71c1c;
+            color: #ffffff;
+        }
+
+        .container {
+            padding: 4rem 5%;
+        }
+
+        .tituloSecao {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gradeInstrumentos {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+        .cartaoInstrumento {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 300px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .cartaoInstrumento:hover {
+            transform: translateY(-5px);
+        }
+
+        .nomeInstrumento {
+            color: #333333;
+        }
+
+        .rodape {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .rodape h2,
+        .rodape h3 {
+            color: #ffffff;
+        }
+
+    </style>
   </head>
+  <!--cabeçalho-->
   <body>
-    <header>
-      <!--cabeçalho-->
-      <h1>RoboMaker Kits Educacionais</h1>
+    <header id="header" class="cabesalhoPrincipal">
+      <div id="logo">
+        <h1 class="titulo">RoboMaker Kits Educacionais</h1>
+      </div>
       <nav>
-        <ul>
+        <ul class="listaNavegacao">
           <li>
-            <a href="#categorias">Categorias</a>
+            <a href="#categorias" class="LinkNav">Categorias</a>
           </li>
-        </ul>
-        <ul>
           <li>
-            <a href="#produtos">Produtos</a>
+            <a href="#produtos" class="LinkNav">Produtos</a>
           </li>
-        </ul>
-        <ul>
           <li>
-            <a href="#curso">Cursos</a>
+            <a href="#curso" class="LinkNav">Cursos</a>
           </li>
-          <ul>
             <li>
-              <a href="cadastro.html">Cadastre-se</a>
+              <a href="cadastro.html" class="LinkNav">Cadastre-se</a>
             </li>
-          </ul>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="categorias">
-        <h2>Nosas Categorias</h2>
+      <section id="categorias" class="tituloSecao" style="background-color: #eceff1; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid blue;">
+        <h2 style="font-size: 3rem; color:#1a1a1a;">O Incrivel Mundo Tecnologico</h2>
         <ul>
-          <li>Placas Microcontroladoras</li>
-          <li>Sensores</li>
-          <li>motores</li>
-          <li>servos</li>
+          <li style="margin-bottom: 0.6rem;">*Placas Microcontroladoras</li>
+          <li style="margin-bottom: 0.5rem;">*Sensores</li>
+          <li style="margin-bottom: 0.5rem;">*Motores</li>
+          <li style="margin-bottom: 0.5rem;">*Servos</li>
         </ul>
       </section>
-      <section id="produtos">
-        <article>
-          <h3>Sensores Fotoelétricos Tubulares M18 - 5000007770</h3>
-          <img
-            src="https://images.tcdn.com.br/img/img_prod/1052393/sensores_fotoeletricos_tubulares_standard_m18_os300_18gi70_a2_v1_5000007770_291_1_be9eb31383321b3d2c4afc94dfd2a25f.png"
-            alt="imagem de um sensor fotoeletrico tubulares"
-            width="300"
-          />
-          <p>
-            sensor de alta qualidade,garantia de funciomamento 5
-            estrelas.Sensores Fotoelétricos Tubulares Standard M18 -
-            OS300-18Gi70-A2-V1 - 5000007770, Sensor Fotoelétrico Tubular Difuso,
-            Material do corpo: Metálico, Distância sensora: 50 a 300mm,
-            Diâmetro: 18mm, Alimentação: 10 ~ 30VCC, Configuração de saída: PNP,
-            Tipo de contato: NA + NF, Conexão: Conector, Indicação: Led,
-            Temperatura de operação: 0 a +60°C, Grau de Proteção: IP67
-          </p>
-          <p>
-            <strong>Preço:456,00 </strong>
-          </p>
-        </article>
-        <article>
-          <h3>
-            Placa de desenvolvimento de microcontroladores atualizável 51 placa
-          </h3>
-          <img
-            src="https://m.media-amazon.com/images/I/716UAqeh9qL._AC_SX679_.jpg"
-            alt="placa de desenvolvimento de micricintroladores"
-            width="300"
-          />
-          <p>
-            placa de sistema pequena STC89C52 placa de aprendizagem para
-            projetos IoT alto desempenho 51 microcontrolador educação e
-            treinamento design eletrônico 51 desenvolvimento
-          </p>
-          <strong>Preço:130,00 </strong>
-        </article>
+      <section id="produtos" id="instrumentos" class="container" style="background-color: #eeeeee;">
+        <div class="gradeInstrumentos">
+          <article class="cartaoInstrumento">
+            <h3>Sensores Fotoelétricos Tubulares M18 - 5000007770</h3>
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/1052393/sensores_fotoeletricos_tubulares_standard_m18_os300_18gi70_a2_v1_5000007770_291_1_be9eb31383321b3d2c4afc94dfd2a25f.png"
+              alt="imagem de um sensor fotoeletrico tubulares"
+              width="150"
+            />
+            <p>
+              sensor de alta qualidade,garantia de funciomamento 5
+              estrelas.Sensores Fotoelétricos Tubulares Standard M18 -
+              OS300-18Gi70-A2-V1 - 5000007770, Sensor Fotoelétrico Tubular Difuso,
+              Material do corpo: Metálico, Distância sensora: 50 a 300mm,
+              Diâmetro: 18mm, Alimentação: 10 ~ 30VCC, Configuração de saída: PNP,
+              Tipo de contato: NA + NF, Conexão: Conector, Indicação: Led,
+              Temperatura de operação: 0 a +60°C, Grau de Proteção: IP67
+            </p>
+            <p>
+              <em  style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">Preço:456,00 </em>
+            </p>
+          </article>
+          <article class="cartaoInstrumento">
+            <h3>
+              Placa de desenvolvimento de microcontroladores atualizável 51 placa
+            </h3>
+            <img
+              src="https://m.media-amazon.com/images/I/716UAqeh9qL._AC_SX679_.jpg"
+              alt="placa de desenvolvimento de micricintroladores"
+              width="150"
+            />
+            <p>
+              placa de sistema pequena STC89C52 placa de aprendizagem para
+              projetos IoT alto desempenho 51 microcontrolador educação e
+              treinamento design eletrônico 51 desenvolvimento
+            </p>
+            <p  style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+              <em>Preço:130,00 </em>
+            </p>
+          </article>
+  
+          <article class="cartaoInstrumento">
+            <h3>Micro servo motor</h3>
+            <img
+              src="https://http2.mlstatic.com/D_NQ_NP_2X_625145-MLA99599446100_122025-F.webp"
+              alt="mrico servo motor"
+              width="150"
+            />
+            <p>
+              ensão de alimentação de 4,8V a 6V para operação eficiente. Ângulo de
+              rotação de 360 graus para movimentos completos. Peso leve de apenas
+              10g, ideal para projetos compactos.
+            </p>
+            <p  style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+              <em>Preço:25,50</em>
+            </p>
+          </article>
+  
+          <article class="cartaoInstrumento">
+            <h3>Motor eletrico</h3>
+            <img
+              src="https://img.kwcdn.com/product/fancy/4bed7def-3832-4652-86a5-0dfad8e2217e.jpg?imageView2/2/w/800/q/70/format/avif"
+              alt="motor eletrico"
+              width="150"
+            />
+            <p>
+              Motor DC 31ZY 12V 24V Alta Velocidade 8000RPM, Mini Motor Escovado
+              de Eixo de 3Mm, Controlo de Velocidade de Rotação Reversível, Baixo
+              Ruído, para Modelos, Bombas, Dispositivos de Beleza, Arduino
+            </p>
+            <p  style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+              <em>Preço:73,00</em>
 
-        <article>
-          <h3>Micro servo motor</h3>
-          <img
-            src="https://http2.mlstatic.com/D_NQ_NP_2X_625145-MLA99599446100_122025-F.webp"
-            alt="mrico servo motor"
-            width="300"
-          />
-          <p>
-            ensão de alimentação de 4,8V a 6V para operação eficiente. Ângulo de
-            rotação de 360 graus para movimentos completos. Peso leve de apenas
-            10g, ideal para projetos compactos.
-          </p>
-          <strong>Preço:25,50</strong>
-        </article>
-
-        <article>
-          <h3>Motor eletrico</h3>
-          <img
-            src="https://img.kwcdn.com/product/fancy/4bed7def-3832-4652-86a5-0dfad8e2217e.jpg?imageView2/2/w/800/q/70/format/avif"
-            alt="motor eletrico"
-            width="300"
-          />
-          <p>
-            Motor DC 31ZY 12V 24V Alta Velocidade 8000RPM, Mini Motor Escovado
-            de Eixo de 3Mm, Controlo de Velocidade de Rotação Reversível, Baixo
-            Ruído, para Modelos, Bombas, Dispositivos de Beleza, Arduino
-          </p>
-          <strong>Preço:73,00</strong>
-        </article>
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="curso">
@@ -139,10 +276,10 @@
         </table>
       </section>
     </main>
-    <footer>
+    <footer id="footer" class="rodape">
         copyright &copy;RoboMaker Kits Educacionais,2025,vitor bonitão
         <a href=""><img src="instagram png.png" alt="instagram"></a>
-         <a href=""><img src="facebook png.png" alt="facebook"></a>
+        <a href=""><img src="facebook png.png" alt="facebook"></a>
           <a href=""><img src="youtube png.png" alt="youtube"></a>
     </footer>
   </body>
