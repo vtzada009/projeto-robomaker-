@@ -3,82 +3,217 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
     <title>Cadastro</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+        background-color: #f8f9fa;
+        color: #333333;
+        line-height: 1.6;
+        }
+
+            h1,h2,h3{
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            }
+
+            p {
+            margin-bottom: 1rem ;
+            }
+
+            a {
+            text-decoration: none;
+            color: inherit;
+            }
+
+            ul {
+            list-style: none;
+            }
+
+            .cabecalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            .titulo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+            line-height: 1.6;
+            }
+
+            .listanavegacao {
+            display: flex;
+            gap: 2rem;
+            }
+
+            .linknav {
+            font-weight: 500;
+            transition:  color 0.3s ease;
+            }
+
+            .linknav:hover{
+            color: #d32f2f;
+            }
+
+            .botaoPrincipal {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+            }
+
+            .botaoPrincipal:hover {
+            background-color: #750f0f;
+            color: #ffffff;
+            }
+
+            .container {
+            padding:  4rem 5%;
+            }
+
+            .titulosecao {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            }
+            
+            .gradeInstrumentos {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .cartaoInstrumento {
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 1.5rem;
+                width: 300px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .cartaoInstrumento:hover {
+                transform: translate(-5px)
+            }
+
+            .nomeIstrumento {
+                color: #333333;
+
+            }
+
+            .rodape  {
+                background-color: #1a1a1a;
+                color: #ffffff;
+                padding: 3rem 5%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+
+            .rodape h2,
+            .rodape h3 {
+                color: #ffffff;
+            }
+
+
+    </style>
 </head>
 
 <body>
-    <h1>Crie sua conta</h1>
-    <br>
-    <form action="nome">
-        <label for="nome">seu nome</label>
-        <br>
-        <input 
-            type="text" 
-            name="nome" 
-            id="nome" 
-            placeholder="digite seu nome" 
-            required
-            >
-
-    </form>
-    <br>
-    <form action="email">
-        <label for="email">email</label>
-        <br>
-        <input 
-            type="email" 
-            name="email" 
-            id="email" 
-            placeholder="digite seu email" 
-            required
-        >
-    </form>
-    <br>
-    <form action="senha">
-        <label for="senha">sua senha</label>
-        <br>
-        <input 
-            type="password" 
-            name="senha" 
-            id="senha" 
-            placeholder="digite sua senha" 
-            required
-            >
-    </form>
-    <br><br>
-    <label for="estudante">Estudante</label>
-    <input 
-        type="radio" 
-        name="profissao" 
-        id="profissao" 
-        required
-        >
-    <label for="professor">Professor</label>
-    <input 
-        type="radio" 
-        name="profissao" 
-        id="profissao" 
-        required
-        >
-    <br><br>
-    <div>
-        <label for="trilha">Trilha de Interesses:</label>
-            <select name="trilha" id="trilha">
-                <option value="">selecione uma trilha</option>
-            <option value="robotica">Robótica Basica</option>
-        <option value="ia">Inteligencia Artificial</option>
-        <option value="programacao">Programação</option>
-            </select>
-    </div>
-
-    <button type="submit">Cadastre-se</button>
-    </form>
+    <section class="container" style="background-color: #eceff1;">
+        <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);">
+            <h1>Crie sua conta</h1>
+            <br>
+            <form action="#">
+                <label for="nome" style="font-weight: bold;">seu nome</label>
+                <br>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    placeholder="digite seu nome" 
+                    required
+                    style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                    >
+            <br>
+                <label for="email" style="font-weight: bold;">email</label>
+                <br>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="digite seu email" 
+                    required
+                     style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                >
+            <br>
+                <label for="senha" style="font-weight: bold;">sua senha</label>
+                <br>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha" 
+                    placeholder="digite sua senha" 
+                    required
+                     style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                    >
+            </form>
+            <br><br>
+            <label for="estudante"  style="font-weight: bold; display: block;">Estudante</label>
+            <input 
+                type="radio" 
+                name="profissao" 
+                id="profissao" 
+                required
+                 style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                >
+            <label for="professor" style="font-weight: bold; text: center;">Professor</label>
+            <input 
+                type="radio" 
+                name="profissao" 
+                id="profissao" 
+                required
+                 style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"
+                >
+            <br><br>
+            <div>
+                <label for="trilha" style="font-weight: bold;">Trilha de Interesses:</label>
+                    <select name="trilha" id="trilha">
+                    <option value="robotica">Robótica Basica</option>
+                <option value="ia">Inteligencia Artificial</option>
+                <option value="programacao">Programação</option>
+                    </select>
+            </div>
+        
+            <button type="submit" class="botaoPrincipal" style="width: 100%; border: none; cursor: pointer;">Cadastre-se</button>
+            </form>  
+        </div>
+    </section>
     
     <nav>
         <ul>
             <li>
-                <a href="index.html">volte ao site</a>
+                <a href="index.html" class="linknav">volte ao site</a>
             </li>
         </ul>
     </nav>
